@@ -3,3 +3,209 @@
     margin: 0;
     padding: 0;
 }
+
+img{
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: "Ubuntu-Regular";
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Ubuntu-Bold";
+    src: url(../fonts/Ubuntu-Bold.ttf);
+}
+
+body{
+    font-family: "Ubuntu-Regular";
+}
+
+.search{
+    width: 15px;
+}
+
+header, main, footer{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+header{
+    text-align: center;
+}
+
+.header-logo{
+    margin: 3em 0;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 2em;
+    color: #DFAA5B;
+    margin-bottom: 3em;
+}
+
+.hero{
+    height: 40vh;
+    background-image: url(../img/hero_image.png);
+    background-size: cover;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+}
+
+.hero-text{
+    color: #fff;
+}
+
+h1{
+    font-size: clamp(1.3rem, 3.5rem, 6rem);
+    text-transform: uppercase;
+    font-family: "Ubuntu-Bold";
+}
+
+h2{
+    text-align: center;
+    color:#957554;
+    font-size: clamp(1rem, 2rem, 5rem);
+}
+
+h3, h4{
+    color: #fff;
+    font-size: clamp(1rem, 1.5rem, 3rem);
+}
+
+.hero-text p{
+    margin: 1em 0;
+}
+
+.hero-btn, .room-gallery-item button{
+    background-color: #DFAA5B;
+    color: #fff;
+    padding: 0.7em 3em;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.facilities{
+    padding: 5em 0;
+}
+
+.facilities-icon-wrapper{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 2em;
+    margin-top: 3em;
+}
+
+.facility-icon-box{
+    color: #957554;
+}
+
+.facility-icon-box img{
+    margin-bottom: 1em;
+}
+
+.room-gallery{
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.room-gallery-item{
+    margin-top: 3em;
+    height: 20vh;
+    border-radius: 10px;
+    background-color: #957554;
+    text-align: center;
+    align-content: end;
+    background-size: cover;
+    padding-bottom: 2em;
+}
+
+.room-gallery-item:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+.room-gallery-item:nth-of-type(1){
+    background-image: url(../img/standard_twin_room.png);
+}
+
+.room-gallery-item:nth-of-type(2){
+    background-image: url(../img/standard_room.png);
+}
+
+.room-gallery-item:nth-of-type(3){
+    background-image: url(../img/standard_view_room.png);
+}
+
+.room-gallery-item:nth-of-type(4){
+    background-image: url(../img/deluxe_room.png);
+}
+
+.room-gallery-item h3{
+    padding-bottom: 0.7em;
+}
+
+.room-gallery-item button{
+    font-size: 1rem;
+    padding: 0.7em 2em;
+}
+
+.cta{
+    text-align: center;
+    padding: 5em 0;
+}
+
+.cta h2{
+    padding-bottom: 2em;
+}
+
+footer{
+    background-color: #111;
+    color: #fff;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    padding: 2em 3em 3em 3em;
+    border-radius: 10px 10px 0 0;
+}
+
+.footer-left, .footer-middle, .footer-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left .footer-logo{
+    margin-bottom: 3em;
+}
+
+.footer-left p {
+    margin: 0.5em 0 0 1em;
+}
+
+.footer-middle ul{
+    list-style: none;
+    line-height: 3rem;
+
+}
+
+input{
+    width: 80%;
+}
+
+input[type="email"]{
+    height: 3em;
+    border-radius: 10px;
+    border-style: none;
+    margin: 1em 0;
+}
